@@ -2,7 +2,6 @@
 #![deny(unsafe_code)]
 #![warn(rust_2018_idioms)]
 #![doc(html_root_url = "https://docs.rs/indexmap/1/")]
-#![no_std]
 
 //! [`IndexMap`] is a hash table where the iteration order of the key-value
 //! pairs is independent of the hash values of the keys.
@@ -79,7 +78,6 @@
 
 extern crate alloc;
 
-#[cfg(has_std)]
 #[macro_use]
 extern crate std;
 
